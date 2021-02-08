@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crudfirebase-29509": {
+      "hosting": {
+        "reactiveForms": [
+          "crudfirebase-29509"
+        ]
+      }
+    }
+  }
+}
