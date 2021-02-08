@@ -18,7 +18,7 @@
                        formControlName="nameUser"
                        [class]="validField('nameUser')"
                 >
-                <small *ngIf="invalidNameField"
+                <small *ngIf="invalidField('nameUser')"
                     class="text-danger"><b>Please enter your name</b> 
                 </small>
             </div>
@@ -31,7 +31,7 @@
                        formControlName="lastNameUser"
                        [class]="validField('lastNameUser')"
                 >
-                <small *ngIf="invalidlastNameField"
+                <small *ngIf="invalidField('lastNameUser')"
                     class="text-danger"><b>Please enter your last name</b>
                 </small>
             </div>
@@ -44,7 +44,7 @@
                        formControlName="phoneNumberUser"
                        [class]="validField('phoneNumberUser')"   
                 >
-                <small *ngIf="invalidPhoneField" 
+                <small *ngIf="invalidField('phoneNumberUser')"
                      class="text-danger"><b>Please enter your phone number (10 digits)</b>
                 </small>
             </div>
@@ -57,7 +57,7 @@
                        formControlName="emailUser"
                        [class]="validField('emailUser')"   
                 >
-                <small *ngIf="invalidEmailField"
+                <small *ngIf="invalidField('emailUser')"
                     class="text-danger"><b>Please provide a valid email</b>
                 </small>               
             </div>
@@ -70,7 +70,7 @@
                        formControlName="postalCodeUser"
                        [class]="validField('postalCodeUser')"   
                 >
-                <small *ngIf="invalidPostalField"
+                <small *ngIf="invalidField('postalCodeUser')"
                        class="text-danger"><b>Please enter your Postal Code (5 digits) </b>
                 </small>                
             </div>
@@ -83,7 +83,7 @@
                        formControlName="directionUser"
                        [class]="validField('directionUser')"   
                 >
-                <small *ngIf="invalidDirectionField"
+                <small *ngIf="invalidField('directionUser')"
                        class="text-danger"><b>Please enter your correct direction (50 characters or less) </b>
                 </small>               
             </div>

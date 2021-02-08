@@ -67,22 +67,9 @@ export class ReactiveFormComponent implements OnInit {
       return 'is-valid';
     }
   }
-  get invalidNameField():boolean{
-    return this.forms.get('nameUser').invalid && this.forms.get('nameUser').touched; 
-  }
-  get invalidlastNameField():boolean{
-    return this.forms.get('lastNameUser').invalid && this.forms.get('lastNameUser').touched;
-  }
-  get invalidPhoneField():boolean{
-    return this.forms.get('phoneNumberUser').invalid && this.forms.get('phoneNumberUser').touched;
-  }
-  get invalidEmailField():boolean{
-    return this.forms.get('emailUser').invalid && this.forms.get('emailUser').touched;
-  }
-  get invalidPostalField(): boolean{
-    return this.forms.get('postalCodeUser').invalid && this.forms.get('postalCodeUser').touched;
-  }
-  get invalidDirectionField():boolean{
-    return this.forms.get('directionUser').invalid && this.forms.get('directionUser').touched;
+  invalidField(field : string):boolean{
+    if(this.forms.get(field).invalid && this.forms.get(field).touched){
+      return true;
+    }
   }
 }
